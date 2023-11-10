@@ -22,8 +22,9 @@ function App() {
 
   return (
     <ApolloProvider client={client}>
-      <RepoInfo repoId={repoId} repoOwner={repoOwner} repoName={repoName} />
-      <Statistic repoId={repoId} repoOwner={repoOwner} repoName={repoName} />
+      <div>xxxxx</div>
+      {/* <RepoInfo repoId={repoId} repoOwner={repoOwner} repoName={repoName} />
+      <Statistic repoId={repoId} repoOwner={repoOwner} repoName={repoName} /> */}
     </ApolloProvider>
   );
 }
