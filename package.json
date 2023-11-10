@@ -12,6 +12,6 @@
     "sass": "^1.69.4"
   },
   "scripts": {
-    "start": "cd app && npm start"
+    "start": "npm start"
   }
 }
