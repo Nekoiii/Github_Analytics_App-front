@@ -10,4 +10,4 @@ COPY ./app/ .
 
 ENV CI=true CHOKIDAR_USEPOLLING=true
 
-# CMD ["npm", "start"]
+CMD ["npm", "start"]
