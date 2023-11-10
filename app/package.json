@@ -46,7 +46,6 @@
     ]
   },
   "devDependencies": {
-    "react-datepicker": "^4.19.2",
     "prettier": "3.0.3",
     "sass": "^1.69.4"
   }
