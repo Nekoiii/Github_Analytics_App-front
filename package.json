@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "@types/react-datepicker": "^4.19.2",
+    "react-datepicker": "^4.19.2",
     "axios": "^1.5.1",
     "react-scripts": "^3.4.4",
     "sass-loader": "^7.3.1",
