@@ -4,7 +4,8 @@ import DatePicker from "react-datepicker";
 
 import { useQuery, useLazyQuery, gql } from "@apollo/client";
 import "../scss/components/statistic.scss";
-import "react-datepicker/dist/react-datepicker.css";
+// import "react-datepicker/dist/react-datepicker.css";
+import "../css/react-datepicker.css";
 
 interface Props {
   repoId: number;
@@ -128,7 +129,7 @@ export const Statistic = ({ repoId, repoOwner, repoName }: Props) => {
         </div>
         <div className="inline">
           <span>To Date:</span>
-          {/* <DatePicker
+          <DatePicker
             selected={inputDate.toDateInput}
             onChange={(date: Date) => {
               console.log("to date---", date);
@@ -139,7 +140,7 @@ export const Statistic = ({ repoId, repoOwner, repoName }: Props) => {
             }}
             dateFormat="yyyy-MM"
             showMonthYearPicker
-          /> */}
+          />
         </div>
         <button className="button-grey" onClick={handleFetchClick}>
           取得
