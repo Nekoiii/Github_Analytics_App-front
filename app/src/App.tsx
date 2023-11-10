@@ -11,7 +11,8 @@ import { RepoInfo } from "./components/RepoInfo";
 import { Statistic } from "./components/Statistic";
 
 const client = new ApolloClient({
-  uri: "http://localhost:3001/graphql",
+  // uri: "http://localhost:3001/graphql",
+  uri: "https://github-analytics-app-api-edddea7fafa4.herokuapp.com/graphql",
   cache: new InMemoryCache(),
 });
 
@@ -22,9 +23,8 @@ function App() {
 
   return (
     <ApolloProvider client={client}>
-      <div>xxxxx</div>
-      {/* <RepoInfo repoId={repoId} repoOwner={repoOwner} repoName={repoName} />
-      <Statistic repoId={repoId} repoOwner={repoOwner} repoName={repoName} /> */}
+      <RepoInfo repoId={repoId} repoOwner={repoOwner} repoName={repoName} />
+      <Statistic repoId={repoId} repoOwner={repoOwner} repoName={repoName} />
     </ApolloProvider>
   );
 }
