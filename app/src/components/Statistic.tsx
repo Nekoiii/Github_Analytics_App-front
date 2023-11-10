@@ -103,12 +103,15 @@ export const Statistic = ({ repoId, repoOwner, repoName }: Props) => {
 
     fetchData();
     setFetchDate({
-      fetchFromDate: inputDate.fromDateInput,
-      fetchToDate: inputDate.toDateInput,
+      // fetchFromDate: inputDate.fromDateInput,
+      // fetchToDate: inputDate.toDateInput,
+      fetchFromDate: new Date("2023-01-01"),
+      fetchToDate: new Date("2023-01-01"),
     });
   };
 
   useEffect(() => {
+    console.log("Statistic--useEffect");
     fetchData();
   }, []);
 
