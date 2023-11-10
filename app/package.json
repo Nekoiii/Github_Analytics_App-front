@@ -14,7 +14,7 @@
     "graphql": "^16.8.1",
     "moment": "^2.29.4",
     "react": "^18.2.0",
-    "react-datepicker": "^4.21.0",
+    "@types/react-datepicker": "^4.21.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
     "typescript": "^3.4.5",
