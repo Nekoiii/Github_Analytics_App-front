@@ -57,6 +57,7 @@ const seconds_to_formated_time = (seconds: number) => {
 };
 
 export const Statistic = ({ repoId, repoOwner, repoName }: Props) => {
+  console.log("Statistic----1--");
   const [inputDate, setInputDate] = useState<{
     fromDateInput: Date;
     toDateInput: Date;
@@ -64,14 +65,18 @@ export const Statistic = ({ repoId, repoOwner, repoName }: Props) => {
     fromDateInput: new Date("2023-01-01"),
     toDateInput: new Date("2023-12-01"),
   });
+  console.log("Statistic----2--", inputDate);
 
   const [fetchDate, setFetchDate] = useState<{
     fetchFromDate: Date;
     fetchToDate: Date;
   }>({
-    fetchFromDate: inputDate.fromDateInput,
-    fetchToDate: inputDate.toDateInput,
+    // fetchFromDate: inputDate.fromDateInput,
+    // fetchToDate: inputDate.toDateInput,
+    fetchFromDate: new Date("2023-01-01"),
+    fetchToDate: new Date("2023-01-01"),
   });
+  console.log("Statistic----3--", fetchDate);
 
   const [fetchData, { data, loading, error }] = useLazyQuery(STATISTIC_QUERY, {
     // network-only: Fetches data directly from the network on every query, bypassing cache.
@@ -90,6 +95,7 @@ export const Statistic = ({ repoId, repoOwner, repoName }: Props) => {
       console.log("Error fetching data:", error);
     },
   });
+  console.log("Statistic----4--", fetchDate);
 
   // Fetch data when the button is clicked
   const handleFetchClick = () => {
