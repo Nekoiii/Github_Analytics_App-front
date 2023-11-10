@@ -8,7 +8,6 @@
     "webpack": "4.42.0"
   },
   "devDependencies": {
-    "@types/react": "^18.2.37",
     "@types/react-datepicker": "^4.19.2",
     "react-datepicker": "^4.19.2",
     "postcss": "^8.4.31",
