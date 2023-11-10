@@ -123,7 +123,7 @@ export const Statistic = ({ repoId, repoOwner, repoName }: Props) => {
       <div className="date_input">
         <div className="inline">
           <span>From Date:</span>
-          <DatePicker
+          {/* <DatePicker
             selected={inputDate.fromDateInput}
             onChange={(date: Date) => {
               console.log("from date---", date);
@@ -134,11 +134,11 @@ export const Statistic = ({ repoId, repoOwner, repoName }: Props) => {
             }}
             dateFormat="yyyy-MM"
             showMonthYearPicker
-          />
+          /> */}
         </div>
         <div className="inline">
           <span>To Date:</span>
-          <DatePicker
+          {/* <DatePicker
             selected={inputDate.toDateInput}
             onChange={(date: Date) => {
               console.log("to date---", date);
@@ -149,7 +149,7 @@ export const Statistic = ({ repoId, repoOwner, repoName }: Props) => {
             }}
             dateFormat="yyyy-MM"
             showMonthYearPicker
-          />
+          /> */}
         </div>
         <button className="button-grey" onClick={handleFetchClick}>
           取得
