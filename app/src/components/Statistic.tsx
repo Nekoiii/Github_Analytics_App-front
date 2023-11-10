@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import moment from "moment";
-// import DatePicker from "react-datepicker";
+import DatePicker from "react-datepicker";
 
 import { useQuery, useLazyQuery, gql } from "@apollo/client";
 import "../scss/components/statistic.scss";
@@ -113,7 +113,7 @@ export const Statistic = ({ repoId, repoOwner, repoName }: Props) => {
       <div className="date_input">
         <div className="inline">
           <span>From Date:</span>
-          {/* <DatePicker
+          <DatePicker
             selected={inputDate.fromDateInput}
             onChange={(date: Date) => {
               console.log("from date---", date);
@@ -124,7 +124,7 @@ export const Statistic = ({ repoId, repoOwner, repoName }: Props) => {
             }}
             dateFormat="yyyy-MM"
             showMonthYearPicker
-          /> */}
+          />
         </div>
         <div className="inline">
           <span>To Date:</span>
