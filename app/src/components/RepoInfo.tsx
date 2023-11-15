@@ -2,11 +2,6 @@ import { useQuery, gql } from "@apollo/client";
 
 import "../scss/components/repoInfo.scss";
 
-// *unfinished: need to be refine here
-// const owner = "Nekoiii";
-// const owner = "Nekoiii2";
-// const repoName = "Rails_Tutorial";
-
 interface Props {
   repoId: number;
   repoOwner: string;
