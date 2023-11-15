@@ -15,9 +15,9 @@ import { HomePage } from "./components/HomePage";
 
 const client = new ApolloClient({
   // Local:
-  uri: "http://localhost:3001/graphql",
+  // uri: "http://localhost:3001/graphql",
   // Deploy:
-  // uri: "https://github-analytics-app-api-edddea7fafa4.herokuapp.com/graphql",
+  uri: "https://github-analytics-app-api-edddea7fafa4.herokuapp.com/graphql",
   cache: new InMemoryCache(),
 });
 
