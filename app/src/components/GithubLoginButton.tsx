@@ -6,7 +6,7 @@ export const GithubLoginButton = () => {
     // window.location.href = "http://localhost:3001/users/auth/github";
     // Deploy:
     window.location.href =
-      "https://github-analytics-app-api-edddea7fafa4.herokuapp.com/users/auth/github";
+      "https://github-analytics-app-front-abb2e289cc93.herokuapp.com/users/auth/github";
   };
 
   return <button onClick={handleLogin}>Login with GitHub</button>;
