@@ -7,7 +7,8 @@ export const GithubLoginButton = () => {
     // Deploy:
     window.location.href =
       "https://github-analytics-app-api-edddea7fafa4.herokuapp.com/users/auth/github";
+    // window.location.href = `${process.env.REACT_APP_BACK_APP_URL}users/auth/github`;
   };
-
+  console.log("process.env--", process.env);
   return <button onClick={handleLogin}>Login with GitHub</button>;
 };
