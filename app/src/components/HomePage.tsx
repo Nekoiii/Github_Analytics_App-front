@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { setRepoName } from "../redux/repositorySlice";
 
 import { RepoInfo } from "./RepoInfo";
 import { Statistic } from "./Statistic";
@@ -11,7 +13,14 @@ interface Props {
 }
 
 export const HomePage = ({ repoId, repoOwner, repoName }: Props) => {
+  const dispatch = useDispatch();
   const jwtToken = localStorage.getItem("jwt");
+  useEffect(() => {
+    if (jwtToken) {
+      dispatch(setRepoName(repoName));
+      console.log("setRepoName--", repoName);
+    }
+  }, [dispatch]);
 
   return (
     <div>

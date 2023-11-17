@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Provider } from "react-redux";
 import store from "./redux/store";
 
-import logo from "./logo.svg";
 import "./App.scss";
 import "./scss/variables.scss";
 import "./scss/style.scss";

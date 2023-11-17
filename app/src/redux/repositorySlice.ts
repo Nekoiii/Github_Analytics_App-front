@@ -6,7 +6,7 @@ interface RepoState {
 
 const initialState: RepoState = {
   // *unfinished
-  repoName: "Rails_Tutorial",
+  repoName: "",
 };
 
 export const repositorySlice = createSlice({
