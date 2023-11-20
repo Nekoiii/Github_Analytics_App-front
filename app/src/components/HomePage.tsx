@@ -16,6 +16,7 @@ export const HomePage = ({ repoId, repoOwner, repoName }: Props) => {
   const dispatch = useDispatch();
   const jwtToken = localStorage.getItem("jwt");
   useEffect(() => {
+    // *unfinished :doesn't work now
     if (jwtToken) {
       dispatch(setRepoName(repoName));
       console.log("setRepoName--", repoName);

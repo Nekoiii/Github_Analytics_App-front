@@ -3,6 +3,7 @@ import { useSelector } from "react-redux";
 import { RootState } from "../redux/store";
 
 import { GithubLoginButton } from "./GithubLoginButton";
+import { LogoutButton } from "./LogoutButton";
 
 import "../scss/components/navbar.scss";
 
@@ -17,7 +18,16 @@ export const NavBar = () => {
         {repoName ? <div>{repoName}</div> : <div>Github 分析サイト</div>}
       </div>
 
-      <div>{jwtToken ? <div>{userName}</div> : <GithubLoginButton />}</div>
+      <div>
+        {jwtToken ? (
+          <div>
+            {userName}
+            <LogoutButton />
+          </div>
+        ) : (
+          <GithubLoginButton />
+        )}
+      </div>
     </div>
   );
 };
